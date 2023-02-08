@@ -23,6 +23,10 @@ app.listen(3000, () => {
 });
 
 //=========== ROUTES FOR HTTP GET REQUESTS ==========
+app.get('/api', (req, res) => {
+    res.send("Welcome to my HTTP Backend Project about song genres made by RYAN LEI.");
+});
+
 app.get('/api/genres', (req, res) => {
     res.send(genres);
 });
